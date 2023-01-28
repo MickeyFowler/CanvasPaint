@@ -8,10 +8,9 @@ class Canvas:
         self.color = color
         self.height = height
         self.width = width
-
-        # Create a 3d numpy array of zeros
+        # This will create a 3d numpy array of zeros for color (R,G,B)
         self.data = np.zeros((self.height, self.width, 3), dtype=np.uint8)
-        # Change [0,0,0] with user given values for color
+        # This will change [0,0,0] with user given values for color
         self.data[:] = self.color
 
     def make(self, image_path):
