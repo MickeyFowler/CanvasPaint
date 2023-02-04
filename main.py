@@ -1,11 +1,11 @@
-from canvas import Canvas
-from shapes import Rectangle, Square
+from create_canvas import Create_canvas
+from square_or_rectangle import Rectangle, Square
 
 canvas_width = int(input("Please enter the canvas width you want: "))
 canvas_height = int(input("Please enter canvas height you want: "))
 colors = {"white": (255, 255, 255), "black": (0, 0, 0)}
 canvas_color = input("Please enter the canvas color you want. (white or black): ")
-canvas = Canvas(height=canvas_height, width=canvas_width, color=colors[canvas_color])
+canvas = Create_canvas(height=canvas_height, width=canvas_width, color=colors[canvas_color])
 
 while True:
     shape_type = input("What shape do you want to draw? (rectangle or square) Enter q to quit. ")
